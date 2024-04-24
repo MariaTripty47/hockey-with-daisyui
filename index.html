@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey with daisyui</title>
+    <!-- tailwind and daisyui cdn -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+<!-- google font poppins -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+<style>
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+</style>
+</head>
+<body class="font-poppins">
+    <header>
+        <nav class="lg:px-20 py-5">
+        <div class="navbar bg-base-100 ">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content z-[1]  shadow bg-base-100 rounded-box  ">
+                  <li><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+              <a class=" text-xl font-semibold lg:btn-ghost lg:text-2xl -ml-3">Hockey's</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="text-red-500 "><a>Home</a></li>
+                  <li><a>About</a></li>
+                  <li><a>Pages</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <a class=" w-28  mt-3  ml-9 text-sm font-semibold rounded-lg btn bg-red-500 text-white lg:text-base     lg:ml-64 lg:w-32 lg:h-16">Get Ticket</a>       
+            </div>
+          </div>
+        </nav
+        <!-- slider -->
+        <div class="carousel w-full  ">
+            <div id="slide1" class="carousel-item relative w-full h-1/2 ">
+              <img src="images//1.png" class=" w-[19.5rem]  h-48 ml-7 rounded-2xl   lg:-ml-2 lg:w-full lg:h-full lg:px-20 " />
+              <div class="absolute flex transform translate-y-36  lg:bottom-48 lg:left-[70rem] gap-3 left-[8rem] ">
+                <a href="#slide2" class="btn btn-circle  bg-black   text-white ">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-black text-white ">❯</a>
+              </div>
+            </div>
+            </div>
+          </div>
+        <div class="pl-3 pt-7 w-[19.5rem] relative tranform translate-y-6  ml-6 h-32  bg-black  lg:h-32 lg:w-96 rounded-2xl lg:p-6 lg:relative tranform lg:-translate-y-40  lg:left-[19.5rem]">
+            <h5 class="   text-base font-medium  text-white ml-1.5">Meet all the heroes from the field</h5>
+            <p class="text-sm text-gray-400 ml-2 mt-2">These heroes,have left an indelible mark on hockey history.</p>
+            </div>
+          </header>
+   <main class=" lg:px-20">
+    <div class=" h-44  mt-16 w-[19rem] ml-7 border-y-2 border-dashed border-gray-300 lg:w-full lg:h-52 lg:-mt-14 lg:-ml-3">
+    <h2 class="  mt-5 text-base font-bold text-center lg:text-2xl lg:mt-12">Professional Hockeys Club</h2>
+    <p class=" text-xs mt-3 lg:mt-4 lg:text-base text-center text-gray-500">Professional hockey clubs epitomize athleticism, strategy, and passion, showcasing the pinnacle of ice hockey excellence.Behind every electrifying game are dedicated athletes, coaches, and staff who strive for greatness. </p>
+  </div>
+  
+<div class=" flex-col flex lg:flex-row justify-between p-10  lg:h-72  gap-6">
+  <div>
+  <div class="ml-[6rem] radial-progress text-red-500 lg:ml-20" style="--value:87;" role="progressbar"><span class="text-black font-bold">87%</span></div>
+    <h3 class="ml-20 text-black  mt-3 lg:ml-16">Prayer Facility</h3>
+    <p class="ml-9 w-48 text-gray-500 text-xs text-center mt-3 lg:-ml-1 lg:w-64    ">Hockey club introduces prayer facility, fostering inclusivity and respect for diverse religious practices among members.</p>
+    </div>
+   
+  <div>
+    <div class=" ml-[6rem] radial-progress text-green-500 lg:ml-24" style="--value:95;" role="progressbar"><span class="text-black font-bold">95%</span></div>
+    <h3 class=" -ml-[1rem] text-black text-center mt-3 lg:ml-7">Experienced Coach</h3>
+    <p class="ml-10 w-48 text-gray-500 text-xs text-center mt-3 lg:-ml-1 lg:w-64">The hockey club greatly benefits from the invaluable expertise of an experienced coach, guiding players towards excellence on and off the ice.</p>
+    </div>
+    
+    <div>
+  <div class=" ml-[6rem] radial-progress text-yellow-500 " style="--value:90;" role="progressbar"><span class="text-black font-bold">90%</span></div>
+    <h3 class=" -ml-[1.3rem] text-black text-center mt-3 lg:ml-4">Senior Player</h3>
+    <p class=" ml-10 w-48 text-gray-500 text-xs text-center mt-3 lg:-ml-1 lg:w-64">The hockey club is anchored by a seasoned senior player, providing leadership and skill to the team's dynamic lineup.</p>
+    </div>
+    
+    <div>
+  <div class=" ml-[6rem] radial-progress text-blue-500 " style="--value:80;" role="progressbar"><span class="text-black font-bold">80%</span></div>
+    <h3 class=" -ml-[1.3rem] text-black text-center mt-3 lg:ml-4">Training Guard</h3>
+    <p class=" ml-9 w-48 text-gray-500 text-xs text-center mt-3 lg:-ml-1 lg:w-64">The hockey club's training guard ensures players' safety and discipline during rigorous practice sessions,emphasizing teamwork.</p>
+    </div>
+</div>
+<div class=" w-[19rem] h-44 ml-8 border-y-2 border-dashed border-gray-300 lg:w-full lg:-ml-3 lg:h-52">
+      <h2 class=" mt-6 text-lg font-bold text-center lg:text-2xl lg:mt-12">Program Sections</h2>
+      <p class=" mt-3   text-xs lg:mt-6 lg:text-base text-center text-gray-500 ">Experience the thrill of hockey with our comprehensive program tailored for all skill levels. From beginners to seasoned players, our expert coaches foster growth, teamwork, and sportsmanship on the ice. </p>
+    </div>
+    
+    <div class="mt-2  flex-col flex  lg:flex-row lg:mt-7 gap-14   ">
+      <div class="w-[19.5rem]  mt-6  lg:w-[36rem] lg:ml-5 ml-7">
+        <div class=" rounded-xl ">
+      <img src="Images/2.png" class="lg:h-2/5 h-60 ">
+        </div>
+        <div class="relative transform -translate-y-56 left-12 ">
+      <h2  class="text-white font-bold mt-3 -ml-7 lg:mt-3 lg:ml-1 lg:text-xl">Junior Program</h2>
+  <p  class="-ml-7 w-48 mt-2 text-xs text-white lg:text-sm lg:w-40 lg:ml-1  lg:mt-3 lg:whitespace-nowrap ">Hockey junior programs cultivate young talent through<br> structured training,fostering both on-ice skills and off-ice<br> development for future success in the sport.</p>
+  <button class=" w-28 h-9 text-white font-semibold text-xs -ml-7  rounded btn-wide mt-3 bg-error lg:w-32 lg:h-10 lg:text-base lg:mt-5 rounded-lg lg:ml-1">Register Now</button>
+</div>
+        </div>
+    
+        <div class="w-[19.5rem]  -mt-56 lg:mt-6 lg:w-[36rem]  lg:-ml-4 ml-7">
+          <div class=" rounded-xl ">
+        <img src="Images/3.png" class="h-60 lg:h-2/5  " >
+      </div>
+      <div class="relative transform -translate-y-56 left-12">
+        <h2  class="text-white font-bold mt-1 -ml-7  lg:mt-3 lg:ml-1 lg:text-xl">Teenager Program</h2>
+        <p  class=" w-48 mt-2 text-white lg:text-sm text-xs lg:mt-3 lg:ml-1  lg:whitespace-nowrap -ml-7">Teenager hockey programs emphasize advanced skill<br> development and physical conditioning, preparing players<br> aged 13 to 18 for higher levels of competition and potential careers in the sport.</p>
+        <button class=" w-28 h-9 text-white font-semibold text-xs  rounded btn-wide mt-3 bg-error lg:w-32 lg:h-10 -ml-7 lg:mt-5 lg:text-base rounded-lg lg:ml-1"> Register Now</button>
+       </div>
+        </div>
+    </div>
+    
+    <div class="-mt-64 ml-7 lg:-mt-52 ">
+      <img src="Images/4.png" class=" bg-opacity-25 mt-20 h-60  rounded-xl w-[19.5rem]  lg:w-[74rem]  lg:h-2/5 "  >
+      </div>
+      <div class="relative transform -translate-y-56 left-12">
+        <h2  class="text-white font-bold mt-3 lg:ml-1 lg:mt-3 text-xl">Professional Program</h2>
+        <p  class="text-white text-xs w-48 mt-2 lg:mt-3 lg:ml-1 lg:whitespace-nowrap lg:-ml-7 text-sm">Hockey professional programs provide elite-level training<br> and support to athletes, honing their skills and preparing them<br> for careers in top-tier leagues worldwide.</p>
+      
+        <button class=" lg:ml-1 w-28 h-9 text-white font-semibold text-xs  rounded btn-wide mt-3 bg-error lg:w-32 lg:h-10 lg:text-base rounded-lg  lg:mt-5">Register Now</button>
+      </div>
+      <div class="lg:-mt-20 -mt-36  border-y-2 border-gray-300 border-dashed h-44 w-[19rem] ml-7 lg:w-full lg:-ml-3 lg:h-52">
+        <h2 class="text-lg lg:text-2xl font-bold text-center mt-3 lg:mt-14">Our New Products</h2>
+        <p class=" mt-2 text-xs text-center text-gray-500 lg:text-base ">Explore the latest innovations in hockey gear for enhanced performance on the ice. Discover state-of-the-art technology engineered to elevate your game and maximize your potential, making every moment on the ice more dynamic and rewarding.</p>
+      </div>
+      <div class="lg:flex lg:mt-12 lg:gap-6 mt-8 ml-7 lg:-ml-1 ">
+      <div class="border border-gray-300 lg:w-1/2 lg:h-44 w-[19.5rem] h-[27rem] rounded-lg lg:-mt-0.5 mt-8">
+      <div class="lg:flex">
+        <div>
+        <img src="Images/5.png" class="lg:w-64 lg:h-40 lg:p-4 lg:mt-2 lg:ml-1 w-[16.7rem] h-44 mt-5 ml-5">
+        </div>
+        <div>
+          <div class="flex gap-2 mt-5 ml-4 lg:-ml-0.5">
+          <img src="Images/icons8-star-30.png" class="w-6 h-6   ">
+          <h2 >5.0</h2>
+          <img src="Images/icons8-eye-24.png" class="w-6 h-6 ">
+          <h2 >20</h2>
+          <img src="Images/icons8-love-48 (2).png" class="w-6 h-6 ">
+          <h2 >200</h2>
+          </div>
+<h2 class="text-black font-bold mt-2 ml-5 lg:ml-0.5">World Cup Flags Football</h2>
+<p class="text-gray-500 text-sm mt-2 ml-5 lg:ml-0.5">Introducing our cutting-edge hockey jacket, designed for peak performance on the ice.</p>
+<div class="lg:flex gap-4 mt-1">
+  <h2 class="text-red-500 font-bold ml-5 lg:m-0.5">Price-$22.00</h2>
+<img src="Images/icons8-shopping-cart-48.png" class="w-6 h-6 mt-1 ml-4 lg:-mt-0.5 lg:-ml-1">
+<h2 class="text-gray-500 lg:-ml-1 lg:mt-0 -mt-6 ml-12">Delivery Fee:Free</h2> 
+        </div>
+</div>
+</div>
+    </div>
+    
+      <div class="border border-gray-300 lg:w-1/2 lg:h-44 w-[19.5em] h-[27rem] rounded-lg lg:-mt-0.5 mt-8">
+      <div class="lg:flex">
+        <div>
+        <img src="Images/6.png" class="lg:w-64 lg:h-40 lg:p-4 lg:mt-2 lg:ml-1 w-[16.7rem] h-44 mt-5 ml-7"  >
+        </div>
+        <div>
+          <div class="flex gap-2 mt-5 ml-5 lg:-ml-0.5">
+          <img src="Images/icons8-star-30.png" class="w-6 h-6   ">
+          <h2 >5.0</h2>
+          <img src="Images/icons8-eye-24.png" class="w-6 h-6 ">
+          <h2 >20</h2>
+          <img src="Images/icons8-love-48 (2).png" class="w-6 h-6 ">
+          <h2 >200</h2>
+          </div>
+<h2 class="text-black font-bold mt-2 ml-5 lg:ml-0.5">World Cup Flags Football</h2>
+<p class="text-gray-500 text-sm mt-2 ml-5 lg:ml-0.5">Experience the future of hockey with our latest lineup of innovative World Tech Toys gear.</p>
+<div class="lg:flex gap-4 mt-1">
+  <h2 class="text-red-500 font-bold ml-5 lg:m-0.5">Price-$22.00</h2>
+<img src="Images/icons8-shopping-cart-48.png" class="w-6 h-6 mt-1 ml-4 lg:-mt-0.5 lg:-ml-1">
+<h2 class="text-gray-500 lg:-ml-1 lg:mt-0 -mt-6 ml-12">Delivery Fee:Free</h2> 
+        </div>
+</div>
+</div>
+    </div>
+      </div>
+     
+     
+      <div class="lg:flex lg:mt-12 lg:gap-6 mt-8 lg:mt-6 ml-7 lg:-ml-1 ">
+        <div class="border border-gray-300 lg:w-1/2 lg:h-44 w-[19.5rem] h-[27rem] rounded-lg lg:-mt-0.5 mt-8">
+        <div class="lg:flex">
+          <div>
+          <img src="Images/7.png" class="lg:w-64 lg:h-40 lg:p-4 lg:mt-2 lg:ml-1 w-[16.7rem] h-44 ml-5 mt-5">
+          </div>
+          <div>
+            <div class="flex gap-2 mt-5 ml-5 lg:-ml-0.5">
+            <img src="Images/icons8-star-30.png" class="w-6 h-6   ">
+            <h2 >5.0</h2>
+            <img src="Images/icons8-eye-24.png" class="w-6 h-6 ">
+            <h2 >20</h2>
+            <img src="Images/icons8-love-48 (2).png" class="w-6 h-6 ">
+            <h2 >200</h2>
+            </div>
+  <h2 class="text-black font-bold mt-2 ml-5 lg:ml-0.5">World Cup Flags Football</h2>
+  <p class="text-gray-500 text-sm mt-2 ml-5 lg:ml-0.5"> Elevate your style on our dynamic new hockey cap collection, blending tradition with modern flair.</p>
+  <div class="lg:flex gap-4 mt-1">
+    <h2 class="text-red-500 font-bold ml-5 lg:m-0.5">Price-$22.00</h2>
+  <img src="Images/icons8-shopping-cart-48.png" class="w-6 h-6 mt-1 ml-4 lg:-mt-0.5 lg:-ml-1">
+  <h2 class="text-gray-500 lg:-ml-1 lg:mt-0 -mt-6 ml-12">Delivery Fee:Free</h2> 
+          </div>
+  </div>
+  </div>
+      </div>
+      
+        <div class="border border-gray-300 lg:w-1/2 lg:h-44 w-[19.5rem] h-[26rem] rounded-lg lg:-mt-0.5 mt-8">
+        <div class="lg:flex">
+          <div>
+          <img src="Images/8.png" class="lg:w-64 lg:h-40 lg:p-4 lg:mt-2 lg:ml-1 w-[16.7rem] h-44 ml-5 mt-5"  >
+          </div>
+          <div>
+            <div class="flex gap-2 mt-5 ml-5 lg:-ml-0.5">
+            <img src="Images/icons8-star-30.png" class="w-6 h-6   ">
+            <h2 >5.0</h2>
+            <img src="Images/icons8-eye-24.png" class="w-6 h-6 ">
+            <h2 >20</h2>
+            <img src="Images/icons8-love-48 (2).png" class="w-6 h-6 ">
+            <h2 >200</h2>
+            </div>
+  <h2 class="text-black font-bold mt-2 ml-5 lg:ml-0.5">World Cup Flags Football</h2>
+  <p class="text-gray-500 text-sm mt-2 ml-5 lg:ml-0.5"> Unleash your team spirit in style with our fresh lineup of hockey jerseys for maximum comfort.</p>
+    <h2 class="text-red-500 font-bold ml-5 lg:m-0.5">Price-$22.00</h2>
+  <img src="Images/icons8-shopping-cart-48.png" class="w-6 h-6 mt-1 ml-4 lg:ml-32 lg:-mt-7">
+  <h2 class="text-gray-500 lg:ml-40 -mt-6 ml-12">Delivery Fee:Free</h2> 
+          </div>
+  </div>
+  </div>
+      </div>
+        </div>
+<div class="lg:flex lg:mt-12 lg:gap-6 mt-8  lg:mt-6 ml-7 lg:-ml-1 ">
+          <div class="border border-gray-300 lg:w-1/2 lg:h-44 w-[19.5rem] h-[27rem] rounded-lg lg:-mt-0.5 mt-8">
+          <div class="lg:flex">
+            <div>
+            <img src="Images/9.png" class="lg:w-64 lg:h-40 lg:p-4 lg:mt-2 lg:ml-1 w-[16.7rem] h-44 ml-5 mt-5">
+            </div>
+            <div>
+              <div class="flex gap-2 mt-5 ml-5 lg:-ml-0.5">
+              <img src="Images/icons8-star-30.png" class="w-6 h-6   ">
+              <h2 >5.0</h2>
+              <img src="Images/icons8-eye-24.png" class="w-6 h-6 ">
+              <h2 >20</h2>
+              <img src="Images/icons8-love-48 (2).png" class="w-6 h-6 ">
+              <h2 >200</h2>
+              </div>
+    <h2 class="text-black font-bold mt-2 ml-5 lg:ml-0.5">World Cup Flags Football</h2>
+    <p class="text-gray-500 text-sm mt-2 ml-5 lg:ml-0.5">  Stay safe and stylish on the ice with our latest hockey helmet collection, engineered for optimal protection.</p>
+    <div class="lg:flex gap-4 mt-1">
+      <h2 class="text-red-500 font-bold ml-5 lg:m-0.5">Price-$22.00</h2>
+    <img src="Images/icons8-shopping-cart-48.png" class="w-6 h-6 mt-1 ml-4 lg:-mt-0.5 lg:-ml-1">
+    <h2 class="text-gray-500 lg:-ml-1 lg:mt-0 -mt-6 ml-12">Delivery Fee:Free</h2> 
+            </div>
+    </div>
+    </div>
+        </div>
+        
+          <div class="border border-gray-300 lg:w-1/2 lg:h-44 w-[19.5rem] h-[27rem] rounded-lg lg:-mt-0.5 mt-8">
+          <div class="lg:flex">
+            <div>
+            <img src="Images/10.png" class="lg:w-64 lg:h-40 lg:p-4 lg:mt-2 lg:ml-1 w-[16.7rem] h-44 ml-5 mt-5"  >
+            </div>
+            <div>
+              <div class="flex gap-2 mt-5 ml-5 lg:-ml-0.5">
+              <img src="Images/icons8-star-30.png" class="w-6 h-6   ">
+              <h2 >5.0</h2>
+              <img src="Images/icons8-eye-24.png" class="w-6 h-6 ">
+              <h2 >20</h2>
+              <img src="Images/icons8-love-48 (2).png" class="w-6 h-6 ">
+              <h2 >200</h2>
+              </div>
+    <h2 class="text-black font-bold mt-2 ml-5 lg:ml-0.5">World Cup Flags Football</h2>
+    <p class="text-gray-500 text-sm mt-2 ml-5 lg:ml-0.5">Introducing our high-performance hockey ball collection,engineered for precision to elevate.</p>
+      <h2 class="text-red-500 font-bold ml-5 lg:m-0.5">Price-$22.00</h2>
+    <img src="Images/icons8-shopping-cart-48.png" class="w-6 h-6 mt-1 ml-4 lg:ml-32 lg:-mt-7">
+    <h2 class="text-gray-500 lg:ml-40 -mt-6 ml-12">Delivery Fee:Free</h2> 
+            </div>
+    </div>
+    </div>
+        </div>
+          </div>
+          <div class=" w-[19rem] h-36 ml-8 border-y-2 border-dashed border-gray-300 lg:w-full lg:-ml-3 lg:h-52 lg:mt-20 mt-7">
+            <h2 class=" mt-5 text-lg font-bold text-center lg:text-2xl lg:mt-16">Clients Question</h2>
+            <p class=" mt-3   text-xs lg:mt-6 lg:text-base text-center text-gray-500 ">Hockey clients often seek advice on contract negotiations, career management, and financial planning.</p>
+          </div>
+<div class="lg:flex border border-gray-300 lg:h-[30rem] mt-10 rounded-lg lg:w-full w-[19.5rem] ml-7" >
+<div>
+  <img src="Images/11.png" class=" lg:p-8  lg:w-[28rem] lg:h-[30rem] w-[20rem] h-[16rem] p-6 ">
+</div>
+<div class="join join-vertical h-[27rem] lg:h-[28rem]">
+  <div class="collapse collapse-arrow join-item border-b border-base-300 lg:w-[40rem] mt-4 w-[17rem]">
+    <input type="radio" name="my-accordion-4" checked="checked" /> 
+    <div class="collapse-title text-lg      lg:text-xl font-medium lg:h-[8rem] lg:-mt-1 -mt-5 ml-3 lg:-ml-3">
+      Our Equipment
+    </div>
+    <div class="collapse-content"> 
+      <p class="text-gray-500 text-sm lg:w-72 lg:-mt-20 -mt-8 ml-3 lg:-ml-3">Hockey clients often seek advice on contract negotiations, career management, and financial planning.</p>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow join-item border-y border-base-300 lg:w-[40rem] w-[17rem]">
+    <input type="radio" name="my-accordion-4" /> 
+    <div class="collapse-title text-lg      lg:text-xl font-medium -mt-2 ml-3 lg:-ml-3 lg:h-20">
+      Hockey Training
+    </div>
+    <div class="collapse-content"> 
+      <p class="text-gray-500 text-sm lg:w-72 lg:mb-6 -mt-6 ml-3 lg:-ml-3">Focused repetition and conditioning are key to honing hockey skills on and off the ice.</p>
+    </div>
+  </div>
+  <div class="collapse collapse-arrow join-item border-b border-base-300 lg:w-[40rem] w-[17rem]">
+    <input type="radio" name="my-accordion-4" /> 
+    <div class="collapse-title text-lg   lg:text-xl font-medium -mt-2 ml-3 lg:-ml-3">
+      Private Lessons
+    </div>
+    <div class="collapse-content"> 
+      <p class="text-gray-500 text-sm lg:w-80 lg:-mt-7 -mt-5 ml-3 lg:-ml-3 ">Personalized guidance in hockey private lessons can accelerate skill development.</p>
+    </div>
+  <div class="collapse collapse-arrow join-item border-y border-base-300 lg:w-[40rem] w-[17rem] ">
+    <input type="radio" name="my-accordion-4" /> 
+    <div class="collapse-title text-lg  lg:text-xl font-medium -mt-3 ml-3 lg:-ml-3">
+      Ski Touring
+    </div>
+    <div class="collapse-content"> 
+      <p class="text-gray-500 text-sm lg:w-[25rem] -mt-7 ml-3 lg:-ml-3">Hockey ski touring combines the thrill of hockey with the adventure of exploring snowy landscapes on skis.</p>
+    </div>
+  <div class="collapse collapse-arrow join-item border-y border-base-300 lg:w-[40rem] w-[17rem] ">
+    <input type="radio" name="my-accordion-4" /> 
+    <div class="collapse-title text-lg  lg:text-xl font-medium -mt-3 ml-3 lg:-ml-3">
+      Booking
+    </div>
+    <div class="collapse-content">  
+      <p class="text-gray-500 text-sm lg:w-[28rem] -mt-7 ml-3 lg:-ml-3">Streamlined hockey booking systems simplify the process of securing ice time and organizing games efficiently.</p>
+    </div>
+  <div class="collapse collapse-arrow join-item border-y border-base lg:w-[40rem] w-[17rem] lg:h-28">
+    <input type="radio" name="my-accordion-4" /> 
+    <div class="collapse-title text-lg  lg:text-xl font-medium  -mt-4   ml-3 lg:-ml-3">
+      Pricings
+    </div>
+    <div class="collapse-content"> 
+      <p class="text-gray-500 text-sm lg:w-[28rem] -mt-8 ml-3 lg:-ml-3">Transparent pricing structures in hockey ensure fair access to training, facilities, and equipment for all players.</p>
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+<div class=" w-[19rem] h-44 ml-8 border-y-2 border-dashed border-gray-300 lg:w-full  lg:h-52 lg:mt-16 mt-9">
+  <h2 class=" mt-8 text-lg font-bold text-center lg:text-2xl lg:mt-16">Get In Touch</h2>
+  <p class=" mt-3   text-xs lg:mt-6 lg:text-base text-center text-gray-500 ">Experience the thrill of hockey as players glide, puck in motion, and fans unite in the passion of the game.</p>
+</div>
+<div class="lg:flex lg:-ml-9 ">
+<div class="border border-gray-300 rounded-lg mt-16 lg:h-[48rem] h-[40.5rem] lg:w-[27rem] w-[19.5rem] lg:ml-16 ml-[1.5rem]">
+<div class="card lg:w-96  w-[16.5rem] bg-base-100 bg-[#D5F0C1] m-6 lg:h-[14rem] lg:mt-6 lg:ml-6">
+  <div class="card-body">
+    <img src="Images/Group 1171275317.png" class="w-9 h-9">
+    <h2 class="card-title">Phone Number:</h2>
+    <p>(+62) 123-321-543</p>
+    <div class="card-actions justify-end">
+    </div>
+  </div>
+</div>
+<div class="card lg:w-96 w-[16.5rem] bg-base-100 bg-[#FFFDCB] m-6 lg:h-[14rem] lg:mt-6 lg:ml-6">
+  <div class="card-body">
+    <img src="Images/Group 1171275318.png" class="w-10 h-10">
+    <h2 class="card-title">Email:</h2>
+    <p>Hockeys@support.com</p>
+    <div class="card-actions justify-end">
+    </div>
+  </div>
+</div>
+<div class="card lg:w-96  w-[16.5rem] bg-base-100 bg-[#EEF5FF] m-6 lg:h-[14rem] h-[12rem]  lg:mt-6 lg:ml-6">
+  <div class="card-body">
+    <img src="Images/Group 1171275321.png" class="w-10 h-10">
+    <h2 class="card-title">Location:</h2>
+    <p>152/1 Mohakhali Wireless Gate</p>
+    <div class="card-actions justify-end">
+    </div>
+  </div>
+</div>
+</div>
+<div>
+ <div class="lg:flex lg:mt-14 mt-5 ">
+<div class="  ml-8 ">
+<label><span class="font-semibold whitespace-nowrap text-lg ">Your Name</span></label><br>
+<input type="name" placeholder="Enter your full name "class="bg-[#E8F0F2] mt-5 lg:w-[22rem] h-[4.5rem] rounded-lg w-[19.3rem] pl-4">
+</div>
+<div class="lg:ml-[2rem] mt-5 lg:-mt-[0.03rem] ml-8">
+<label><span class="whitespace-nowrap  font-semibold text-lg    ">Your Email</span></label><br>
+<input type="name" placeholder="Enter your email" class=" bg-[#E8F0F2] lg:w-[22rem] h-[4.5rem] rounded-lg mt-[1.2rem] w-[19.3rem] pl-4 ">
+</div>
+ </div>
+ <div class="lg:flex lg:mt-6 mt-5 ">
+<div class="ml-8">
+  <label> <span class="font-semibold whitesfont-semibold whitespace-nowrap text-lg">Subject</span></label>
+  <input type="name" placeholder="Enter your subject" class="bg-[#E8F0F2] mt-5 lg:w-[22rem] h-[4.5rem] rounded-lg w-[19.3rem] pl-4" >
+</div>
+<div class="lg:ml-[2rem] mt-5 lg:-mt-[0.03rem] ml-8">
+  <label> <span class="font-semibold whitespace-nowrap  text-lg"> Phone Number</span></label>
+  <input type="name" placeholder="Enter your phone number" class="bg-[#E8F0F2] rounded-lg mt-5 lg:w-[22rem] h-[4.5rem] rounded-lg w-[19.3rem] pl-4 ">
+</div>
+ </div>
+  
+<div class="ml-8 mt-5">
+  <label><span class="font-semibold whitespace-nowrap  text-lg ">Message</span></label><br>
+  <input type="name" placeholder="Write your Message" class="bg-[#E8F0F2] mt-5  lg:w-[46rem] rounded-lg lg:h-[23rem] pb-72 pl-5 w-[19.3rem] pt-4 pl-4">
+  </div>
+  <div>
+  <button class="bg-[#F05941]  rounded-lg text-white text-lg lg:w-[46rem] lg:ml-8 ml-[1.9rem]  mt-5 lg:h-[3.5rem] w-[19.3rem] h-14 pl-4">Send Message</button>
+</div>
+  <div class=" w-[19.5rem]  bg-[#E8F0F2] lg:mt-16 mt-8 lg:w-[75rem]  lg:-ml-[27rem] rounded-lg lg:h-48 ml-7 h-[10rem]">
+<h3 class="lg:pt-12 pt-6  text-xl font-semibold text-center">Social Media</h3>
+<div class="flex gap-4 justify-center mt-6">
+<img src="Images/icons8-twitter-50.png"class="w-7 h-7">
+<img src="Images/icons8-facebook-f-24.png"class="w-7 h-7">
+<img src="Images/icons8-instagram-50.png" class="w-7 h-7">
+<img src="Images/icons8-github-64 (1).png" class="w-8 h-8">
+</div>
+</div>
+</main>
+<footer class="footer p-10 bg-black text-base-content lg:h-[25rem] lg:mt-16 mt-8">
+  <aside>
+    <h3 class="text-white  text-2xl font-semibold mt-10 ml-14 lg:-ml-[0.03rem]">Get In Touch</h3>
+<p class="text-gray-500 mt-3 ">For a quick hockey update,try reaching <br>out to a locaL hockey association or league <br>near you for the latest News and events</p>
+<div class="flex gap-3 mt-4">
+  <img src="Images/icons8-message-24.png">
+  <P class="text-gray-500">hockeys@support.com</P>
+</div>
+<div class="flex gap-3 mt-4">
+<img src="Images/icons8-phone-24.png">
+  <P class="text-gray-500">(+62) 123 321 456</P>
+</div>
+  </aside> 
+
+  <nav>
+    <h6 class="footer-title text-white mt-11 ml-6">Company</h6> 
+    <a class="link link-hover text-gray-500 ml-6">About us</a>
+    <a class="link link-hover text-gray-500 ml-5 lg:ml-6">leadership</a>
+    <a class="link link-hover text-gray-500 ml-7 lg:ml-6">careers</a>
+    <a class="link link-hover text-gray-500 ml-3 lg:ml-6">News @ Article </a>
+    <a class="link link-hover text-gray-500 ml-4 lg:ml-6">Legal Notice</a>
+  </nav> 
+  <nav>
+    <h6 class="footer-title text-white lg:mt-11 ml-40  -mt-52">Support</h6> 
+    <a class="link link-hover text-gray-500 lg:mt-0.5 ml-[9.5rem] -mt-[11.5rem] lg:ml-40">Help Center</a>
+    <a class="link link-hover text-gray-500 lg:mt-1  ml-[11.2rem] -mt-[10rem]  lg:ml-40">FAQ</a>
+    <a class="link link-hover text-gray-500 lg:mt-1  ml-[9rem] -mt-[8.9rem]  lg:ml-40">Ticket Support</a>
+    <a class="link link-hover text-gray-500 lg:mt-1  ml-[9.5rem] -mt-[7.5rem]  lg:ml-[10rem]">Contact Us</a>
+  </nav> 
+  <nav class="-mt-20 lg:mt-10 ">
+    <h6 class="footer-title text-white ml-24 ">Services</h6> 
+    <a class="link link-hover text-gray-500 ml-[6rem]">Academy</a>
+    <a class="link link-hover text-gray-500 ml-[5rem] lg:ml-[6rem]">Group Lession</a>
+    <a class="link link-hover text-gray-500 ml-[5rem] lg:ml-[6rem]">Private Lession</a>
+    <a class="link link-hover text-gray-500 ml-[4.6rem] lg:ml-[6rem]">Hockeys for kids</a>
+    <a class="link link-hover text-gray-500 ml-[4.4rem] lg:ml-[6rem]">Hockeys for Adults</a>
+  </nav>
+</footer>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+          
